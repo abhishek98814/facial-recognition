@@ -145,12 +145,12 @@ const Login = () => {
           disabled={loading}
           className="w-full px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700 disabled:bg-green-300"
         >
-          {loading ? 'Logging in...' : 'Login'}
+          {loading ? 'Attending...' : 'Attendance User'}
         </button>
 
         {error && <p className="mt-4 text-red-500">{error}</p>}
         {message && <p className="mt-4 text-green-500">{message}</p>}
-        {loginTime && <p className="mt-4 text-blue-500">Login Time: {loginTime}</p>}
+        {loginTime && <p className="mt-4 text-blue-500">Attend Time: {loginTime}</p>}
 
         <div className="mt-4 text-center">
           <Link to="/register" className="text-blue-500 hover:underline">
